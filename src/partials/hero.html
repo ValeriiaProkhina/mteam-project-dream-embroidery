@@ -1,1 +1,47 @@
-
+<section class="hero-section section">
+  <div class="container hero-container">
+    <div class="hero-star">
+      <svg class="hero-star-icon" width="52" height="51" aria-label="star icon">
+        <use href="./img/icons.svg#icon-star"></use>
+      </svg>
+      <p class="hero-star-text">all embroidery is made by hand</p>
+    </div>
+    <div class="div-wrapper">
+      <div>
+        <h1 class="hero-title">
+          Reviving the traditional
+          <span class="hero-title-span">Ukrainian</span> artistry in every
+          stitch.
+        </h1>
+        <button class="hero-button" type="button">
+          <a href="#your-order">Order</a>
+          <!-- в макете ошибка в описании иконки -->
+          <svg
+            class="hero-order-icon"
+            width="24"
+            height="17"
+            aria-label="order button"
+          >
+            <use href="./img/icons.svg#icon-btn-order"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- div for img -->
+      <!-- <div hero-img> -->
+      <img
+        srcset="
+          ../img/hero/girl-desk.jpg    392w,
+          ../img/hero/girl-desk@2x.jpg 784w,
+          ../img/hero/girl-tab.jpg     413w,
+          ../img/hero/girl-tab@2x.jpg  826w,
+          ../img/hero/girl-mob.jpg     335w,
+          ../img/hero/girl-mob@2x.jpg  670w
+        "
+        src="../img/hero/girl-desk.jpg"
+        sizes="(min-width: 1280px) 392px, (min-width: 768px) 413px, (max-width: 767px) 335px"
+        alt="girl"
+      />
+      <!-- </div> -->
+    </div>
+  </div>
+</section>
