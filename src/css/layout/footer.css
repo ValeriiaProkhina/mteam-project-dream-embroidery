@@ -7,12 +7,14 @@
     height: auto;
   }
   .footer_ul {
+    margin-left: 16px;
     width: 280px;
     flex-wrap: wrap;
     display: inline-flex;
     align-items: flex-start;
     justify-content: space-between;
     row-gap: 25px;
+    margin-top: 40px;
     margin-bottom: 40px;
   }
   .footer_li {
@@ -29,6 +31,7 @@
     font-weight: 400;
     line-height: 54px; /* 122.727% */
     letter-spacing: -1.32px;
+    margin-left: 16px;
     margin-bottom: 80px;
   }
   .footer_Ukrainian {
@@ -38,13 +41,13 @@
     line-height: 54px;
     letter-spacing: -1.32px;
   }
+  .footer_section:last-child {
+    padding: 0;
+  }
   .footer_background_img {
-    background-image: url('/src/img/footer/ft_elm_mobile.png');
-    background-size: cover;
-    padding-right: 0px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
+    background-image: url('../../img/footer/ft_elm_mobile.png');
+    background-repeat: no-repeat;
+    height: 212px;
   }
 }
 @media screen and (min-width: 375px) {
