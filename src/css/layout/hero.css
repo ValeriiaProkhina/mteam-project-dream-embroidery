@@ -1,12 +1,15 @@
-/* .hero-container {
-    задать column через медиа мин320 анд макс 375?
-    flex-direction: column;
-} */
+/* mobile first */
 
 .hero-star {
     display: none;
 }
 
+
+@media screen and (max-width: 767px){
+    .hero-div-dekor-img {
+        display: none;
+    }
+}
 
 .hero-title {
     width: 335px;
@@ -40,7 +43,7 @@
     gap: 10px;
     border-radius: 15px;
     border: 1px solid rgba(252, 249, 249, 0.10);
-    /* тут нужны авто марджини\другие марджины задал для таблита */
+    /* тут нужны авто марджини\задал фикс марджины для таблита и декстопа */
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 40px;
@@ -62,38 +65,19 @@
     border-radius: 4px;
 }
 
-/* правило для планшета */
-
-/* вынес шапку, что 1х и 2х были рядом */
-@media screen and (min-width: 768px) {
-    .hero-section {
-        background-image: url(../../img/hero/cap.png);
-        background-repeat: no-repeat;
-        background-position: 100% 100%;
-        /* correct size? */
-        background-size: 142px 157px;
-        /* position: relative; */
-    }
-}
-
-@media (min-resolution: 192dpi) and (min-width: 768px),
-screen and (min-resolution: 2dppx) and (min-width: 768px),
-screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-    .hero-section {
-        background-image: url(../../img/hero/cap@2x.png);
-    }
-}
+/* tablet */
 
 @media screen and (min-width: 768px) {
         
+    .hero-section {
+        position: relative;
+    }
+
     .hero-container {
         display: flex;
         position: relative;
-        /* width для шапки */
-        max-width: 100%;
-        max-height: 100%;
-        
     }
+
 
     .hero-star {
         position: absolute;
@@ -106,7 +90,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     }
 
     .hero-star-icon {
-        stroke: var(--yellow);
         fill: var(--yellow);
     }
 
@@ -153,16 +136,17 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         margin-left: 141px;
         /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
     }
+
+    .hero-dekor-img {
+        position: absolute;
+        right: 32px;
+        bottom: -97px;
+    }
 }
 
-
+/* desktop */
 
 @media screen and (min-width: 1280px) {
-    
-    .hero-container {
-        display: flex;
-        }
-
     .hero-star {
         position: absolute;
         display: flex;
@@ -173,24 +157,24 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         top: 14px;
         }
 
-        .div-wrapper {
-            flex-direction: row-reverse;
-            gap: 40px;
-        }
+    .div-wrapper {
+        flex-direction: row-reverse;
+        gap: 40px;
+    }
 
-        .hero-title {
-            width: 518px;
-            padding-top: 94px;
-        }
+    .hero-title {
+        width: 518px;
+        padding-top: 94px;
+    }
 
-        .hero-button {
-            margin-right: 209px;
-            margin-left: 141px;
-            /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-        }
+    .hero-button {
+        margin-right: 209px;
+        margin-left: 141px;
+        /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    }
 
+    .hero-dekor-img {
+        position: absolute;
+        right: 100px;
+        }
 }
-
-
-
-
