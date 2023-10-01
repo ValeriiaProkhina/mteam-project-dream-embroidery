@@ -1,0 +1,47 @@
+/*=========== mobile 320px + ============ */
+.description {
+  background-image: url(/src/img/png/ornament.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.description-title {
+  padding-bottom: 20px;
+  color: #fcf9f9;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+}
+.description-text {
+  margin-top: 20px;
+  color: var(--grey);
+  font-size: 14px;
+  width: 335px;
+}
+
+/*============ mobile 375px + ==============
+@media screen and (min-width: 375px) {
+}*/
+
+/*============ tablet 768px + ==============*/
+@media screen and (min-width: 768px) {
+  .description-title {
+    font-size: 44px;
+    line-height: 64px;
+  }
+  .description-text {
+    font-size: 16px;
+    width: 704px;
+  }
+}
+
+/*=========== desctop 1280px ================*/
+@media screen and (min-width: 1280px) {
+  .description {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .description-text {
+    width: 436px;
+  }
+}
