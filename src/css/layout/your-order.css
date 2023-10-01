@@ -159,7 +159,6 @@
     gap: 50px;
   }
   .image-girl {
-    /* width: 524px; */
     height: 521px;
   }
 
@@ -169,7 +168,7 @@
   .section-your-order {
     background-image: url('../../img/your_order/elements.png');
     background-repeat: no-repeat;
-    background-position: 0% 94%;
+    background-position: 0% 93%;
   }
 }
 @media screen and (min-resolution: 192dpi) and (min-width: 1280px),
