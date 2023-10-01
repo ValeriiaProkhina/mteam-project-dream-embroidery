@@ -25,5 +25,6 @@
 <path fill="none" stroke="#ecd979" style="stroke: var(--color2, #ecd979)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M8.742 24.582h36.591"></path>
 <path fill="none" stroke="#ecd979" style="stroke: var(--color2, #ecd979)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M19.965 14.885h25.368"></path>
 </symbol>
+
 </defs>
 </svg>
