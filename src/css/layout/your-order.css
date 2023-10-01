@@ -39,6 +39,7 @@
 .comment {
   height: 196px;
   border-radius: 8px;
+  resize: none;
 }
 .button-send {
   display: flex;
@@ -86,6 +87,9 @@
   }
   .button-send {
     margin: 0 auto;
+  }
+  .image-girl-background {
+    margin-bottom: 80px;
   }
 }
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -159,6 +163,7 @@
   .image-girl-background {
     background-image: url(../../img/your_order/image-girl-green.jpg);
     height: 776px;
+    margin-bottom: 150px;
   }
   .title-your-order {
     width: 666px;
