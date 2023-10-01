@@ -10,25 +10,26 @@
 .title-yellow {
   color: #ecd979;
 }
-.input {
-  display: block;
-  width: 335px;
-  height: 40px;
-  padding: 14px 16px;
 
-  border-radius: 15px;
+.input,
+.comment {
+  width: 335px;
+  padding: 14px 16px;
   border: 1px solid rgba(252, 249, 249, 0.1);
 
   background-color: transparent;
   outline: transparent;
 
   color: var(--white, #fcf9f9);
-
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.02em;
+}
+.input {
+  height: 40px;
+  border-radius: 15px;
 }
 .input:focus,
 .input:hover,
@@ -37,21 +38,8 @@
   border: 1px solid rgba(252, 249, 249, 0.6);
 }
 .comment {
-  width: 335px;
   height: 196px;
   border-radius: 8px;
-  border: 1px solid rgba(252, 249, 249, 0.1);
-  resize: none;
-  background-color: transparent;
-  outline: transparent;
-  padding: 14px 16px;
-  color: var(--white, #fcf9f9);
-  font-family: Manrope;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.02em;
 }
 .button-send {
   display: flex;
@@ -135,6 +123,7 @@
   .comment {
     width: 508px;
   }
+
   .title-your-order {
     max-width: 542px;
     font-size: 44px;
