@@ -12,25 +12,25 @@
                 of service</h2>
             <form class="form-order">
                 <div class="input-box">
-                    <label for="user-name">
-                        <input class="input" id="user-name" name="user-name" type="text"
-                            placeholder="Enter your full name">
-                    </label>
+
+                    <input class="input" id="user-name" name="user-name" type="text" pattern="[A-Za-z0-9]"
+                        placeholder=" Enter your full name">
+
                 </div>
                 <div class="input-box">
-                    <label for="email">
-                        <input class="input" type="email" name="email" id="email" placeholder="Enter your email">
-                    </label>
+
+                    <input class="input" type="email" name="email" id="email" pattern="(?=.*[a-z])(?=.*[A-Z])"
+                        placeholder="Enter your email">
+
                 </div>
 
                 <div class="comment-box">
-                    <label class="form-label" for="user-comment">
-                    </label>
+
 
                     <textarea class="comment" name="user-comment" placeholder="Comments" id="user-comment"></textarea>
 
                 </div>
-                <button class="button-send">Send
+                <button class="button-send" type="submit">Send
                     <svg class="send-svg" width="26" height="10">
                         <use href="../img/icons.svg#icon-btn-order"></use>
                     </svg>
