@@ -120,6 +120,8 @@
     background-repeat: no-repeat;
     background-position: 0% 97%;
     padding-bottom: 129px;
+    /* background-position: 0% 100%;
+    margin-bottom: 50px; */
   }
 
   .button-send {
