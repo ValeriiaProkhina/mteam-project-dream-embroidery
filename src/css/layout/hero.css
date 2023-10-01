@@ -18,7 +18,7 @@
     font-weight: 400;
     line-height: 1.23;
     /* 122.727% */
-    letter-spacing: -1.32px;
+    letter-spacing: -0,03em;
     margin-bottom: 20px;
 }
 
@@ -29,6 +29,8 @@
 .hero-button {
     background-color: transparent;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     height: 49px;
     padding: 14px 36px;
     border-radius: 15px;
@@ -36,7 +38,7 @@
     margin-right: 130px;
     margin-left: 90px;
     margin-bottom: 40px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button-link {
@@ -45,12 +47,11 @@
     font-size: 14px;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: -0.56px;
+    letter-spacing: -0.04em;
     text-transform: uppercase;
     align-items: flex-start;
     justify-content: center;
     gap: 10px;
-    
 }
 
 .hero-button:hover,
@@ -67,6 +68,7 @@
 .hero-img-radius {
     border-radius: 4px;
 }
+
 
 /* tablet */
 
@@ -99,15 +101,10 @@
     .hero-star-text {
         color: var(--grey);
         text-align: center;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: -0.64px;
         width: 115px;
     }
 
-    .div-wrapper {
+    .hero-div-wrapper {
         display: flex;
         flex-direction: column;
     }
@@ -116,28 +113,22 @@
         width: 549px;
         color: var(--white);
         font-size: 54px;
-        font-style: normal;
-        font-weight: 400;
         line-height: 1.18;
         /* 118.519% */
         letter-spacing: -1.62px;
         margin-bottom: 40px;
-        
     }
     
     .hero-button {
-        font-size: 16px;
-        letter-spacing: -0.64px;
         display: flex;
         padding: 14px 39px;
-        align-items: center;
-        justify-content: center;
         width: 168px;
-        border-radius: 15px;
-        border: 1px solid rgba(252, 249, 249, 0.10);
         margin-right: 240px;
         margin-left: 141px;
-        /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    }
+
+    .hero-button-link {
+        font-size: 16px;
     }
 
     .hero-dekor-img {
@@ -160,7 +151,7 @@
         top: 14px;
         }
 
-    .div-wrapper {
+    .hero-div-wrapper {
         flex-direction: row-reverse;
         gap: 40px;
     }
@@ -173,7 +164,6 @@
     .hero-button {
         margin-right: 209px;
         margin-left: 141px;
-        /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
     }
 
     .hero-dekor-img {
