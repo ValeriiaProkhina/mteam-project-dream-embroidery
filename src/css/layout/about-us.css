@@ -1,8 +1,7 @@
 /*=========== mobile 320px + ============ */
-.description {
-  background-image: url(/src/img/png/ornament.png);
+.ornament-about {
+  background-image: url(/src/img/about-us/ornament-m.png);
   background-repeat: no-repeat;
-  background-position: right;
 }
 .description-title {
   padding-bottom: 20px;
