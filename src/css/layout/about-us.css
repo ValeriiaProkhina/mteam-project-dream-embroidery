@@ -9,6 +9,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: url(/src/img/sample/ornament-m.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--black);
+  min-width: 459px;
+  height: 408px;
+  margin: 0 auto;
+  flex-shrink: 0;
 }
 .about-title {
   padding-bottom: 20px;
