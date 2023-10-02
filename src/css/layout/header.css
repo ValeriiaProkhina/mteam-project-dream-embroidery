@@ -1,86 +1,149 @@
-.header-content {}
 .header-container {
     display: flex;
-    width: 1440px;
+    width: 375px;
     height: 52px;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
     text-align: center;
+    gap: 87px;
 }
 .header-nav {
-    display: flex;
+    width: 44;
+    height: 39;
 }
-.header-icon {}
 .header-listnav {
-    display: flex;
-    align-items: flex-start;
-    gap: 25px;
-    position: absolute;
-    font-size: 14px;
-}
-.header-link {
-    color: var(--white, #FCF9F9);
-    text-align: center;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    text-transform: uppercase;
-    margin-left: 60px;
-}
-.header-gallery {
-    display: flex;
-    align-items: flex-start;
-    gap: 25px;
-    position: absolute;
-    font-size: 14px;
+    display: none;
 }
 .header-address {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 15px;
-    border: 1px solid rgba(252, 249, 249, 0.10);
-    margin-right: 20px;
-}
-.address-list-link {
-    color: var(--white, #FCF9F9);
-    font-family: Manrope;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    text-transform: uppercase;
+    display: none;
 }
 .header-socials {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
-}
-.header-item-social {}
-.header-list-social {
-    display: flex;
-    padding: 8px;
-    align-items: center;
-    gap: 8px;
-    border-radius: 15px;
-    border: 1px solid rgba(252, 249, 249, 0.10);
-    background: rgba(252, 249, 249, 0.10);
-}
-.header-social-icon {
-    width: 28px;
-    height: 28px;
 }
 .open-mobile-menu {
     width: 36px;
     height: 24px;
     margin-left: 12px;
     background: var(--black);
-    display: none;
 }
-.open-mobile-menu-icon {
-    width: 36px;
-    height: 24px;
+.header-list-social {
+    display: flex;
+    padding: 8px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 15px;
+    border: 1px solid rgba(252, 249, 249, 0.10);
+    background: rgba(252, 249, 249, 0.10);
+}
+.header-social-icon {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .header-container {
+        display: flex;
+        width: 768px;
+        height: 52px;
+        justify-content: center;
+        align-items: center;
+        gap: 440px;
+        flex-shrink: 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header-container {
+        display: flex;
+        width: 1280px;
+        height: 52px;
+        justify-content: center;
+        align-items: center;
+        gap: 129px;
+        flex-shrink: 0;
+    }
+    .header-nav {
+        display: flex;
+        text-align: center;
+    }
+    .header-icon {}
+    .header-listnav {
+        display: flex;
+        align-items: flex-start;
+        gap: 25px;
+        font-size: 14px;
+        margin-top: auto;
+    }
+    .header-link {
+        color: var(--white, #FCF9F9);
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        text-transform: uppercase;
+        margin-left: 60px;
+        display: flex;
+        font-size: 14px;
+    }
+    .header-gallery {
+        display: flex;
+        align-items: flex-start;
+        gap: 25px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .header-address {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 15px;
+        border: 1px solid rgba(252, 249, 249, 0.10);
+        margin-right: 20px;
+        margin-top: auto;
+    }
+    .address-list-link {
+        color: var(--white, #FCF9F9);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+    .header-socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+    .header-item-social {}
+    .header-list-social {
+        display: flex;
+        padding: 8px;
+        align-items: center;
+        gap: 8px;
+        border-radius: 15px;
+        border: 1px solid rgba(252, 249, 249, 0.10);
+        background: rgba(252, 249, 249, 0.10);
+    }
+    .header-social-icon {
+        width: 28px;
+        height: 28px;
+    }
+    .open-mobile-menu {
+        width: 36px;
+        height: 24px;
+        margin-left: 12px;
+        background: var(--black);
+        display: none;
+    }
+    .open-mobile-menu-icon {
+        width: 36px;
+        height: 24px;
+
+    }
 }
