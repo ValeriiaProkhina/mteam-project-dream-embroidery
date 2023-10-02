@@ -110,6 +110,15 @@
     padding-top: 150px;
     padding-bottom: 150px;
   }
+  /* .our-collection-background {
+    background-image: url(/src/img/our-collection/our-collection-img.png);
+    background-repeat: no-repeat;
+    display: flex;
+    width: 338px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+  } */
   .container-collection {
     padding: 0 15px;
     margin: 0 auto;
