@@ -5,6 +5,7 @@
     flex-shrink: 0;
     width: auto;
     height: auto;
+    position: relative;
   }
   .footer_ul {
     margin-left: 16px;
