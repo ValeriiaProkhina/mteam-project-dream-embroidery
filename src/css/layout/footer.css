@@ -50,7 +50,7 @@
     margin: 0 auto;
   }
 }
-/*  */
+
 /* .footer_background_img {
     background-image: url("../../img/footer/ft_elm_mobile.png");
     background-repeat: no-repeat;
@@ -91,7 +91,7 @@
     color: #fcf9f9;
     font-size: 54px;
     font-weight: 400;
-    line-height: 1.18; /* 118.519% */
+    line-height: 1.18;
     letter-spacing: -0.03em;
     margin-bottom: 0;
   }
