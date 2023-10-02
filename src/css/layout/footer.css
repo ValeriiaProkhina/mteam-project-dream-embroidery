@@ -7,7 +7,6 @@
   .footer_ul {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 40px;
     row-gap: 25px;
     margin-bottom: 40px;
   }
@@ -80,11 +79,13 @@
   }
   .footer_ul {
     flex-wrap: nowrap;
-    column-gap: 25px;
+    justify-content: left;
+
     row-gap: 0;
   }
   .footer-item {
     width: auto;
+    margin-right: 25px;
   }
   .footer_motto {
     max-width: 521px;
@@ -129,6 +130,9 @@
       cursor: pointer;
       width: auto;
       margin-bottom: 117px;
+    }
+    .footer-item {
+      margin-right: 0;
     }
     .footer_li {
       margin-right: 25px;
