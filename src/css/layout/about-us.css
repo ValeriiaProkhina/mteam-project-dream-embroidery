@@ -1,7 +1,14 @@
 /*=========== mobile 320px + ============ */
 .ornament-about {
+  margin: 459px;
+  height: 408px;
+  margin: 0 auto;
+  flex-shrink: 0;
+  background-color: var(--black);
   background-image: url(/src/img/about-us/ornament-m.png);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .description-title {
   padding-bottom: 20px;
@@ -16,10 +23,6 @@
   font-size: 14px;
   width: 335px;
 }
-
-/*============ mobile 375px + ==============
-@media screen and (min-width: 375px) {
-}*/
 
 /*============ tablet 768px + ==============*/
 @media screen and (min-width: 768px) {
