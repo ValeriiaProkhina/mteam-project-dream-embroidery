@@ -30,32 +30,44 @@
     border: none;
     margin-left: 12px;
 }
+
+
 .header-list-social {
     display: flex;
-    padding: 8px;
-    align-items: flex-start;
-    gap: 8px;
     border-radius: 15px;
+    padding: 8px;
+    gap: 8px;
     border: 1px solid rgba(252, 249, 249, 0.10);
     background: rgba(252, 249, 249, 0.10);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
+
+.header-list-social:hover,
+.header-list-social:focus {
+        border: 1px solid var(--yellow);
+    }
+
+
 .header-social-icon {
     fill: var(--white);
 }
 .header-content{
     padding-top: 20px;
+    padding-bottom: 40px;
 }
-.address-list-link{
-    border-radius: 15px;
-    border: 1px solid rgba(252, 249, 249, 0.10);
-    padding: 14px 28px;
-}
+
+
 @media screen and (min-width: 768px) {
     .header-container {
         width: 768px;
     }
     .open-mobile-menu{
         margin-left: 20px;
+    }
+
+    .header-content {
+        padding-bottom: 56px;
     }
 }
 
@@ -79,6 +91,7 @@
         font-size: 14px;
         margin-left: 60px;
     }
+
     .header-link {
         color: var(--white, #FCF9F9);
         text-align: center;
@@ -95,36 +108,42 @@
         gap: 25px;
         text-align: center;
         font-size: 14px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+    .header-link:hover,
+    .header-link:focus {
+        color: var(--yellow);
+    }
+
+
     .header-address {
         display: block;
-        margin-left: 128px;
+        margin-left: auto;
     }
+
     .address-list-link {
         color: var(--white, #FCF9F9);
-        font-family: Manrope;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: 20px;
-        text-transform: uppercase;
-    }
-    .header-socials {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 12px;
-        margin-left: 20px;
-    }
-    .header-list-social {
-        display: flex;
-        padding: 8px;
-        align-items: center;
-        gap: 8px;
         border-radius: 15px;
         border: 1px solid rgba(252, 249, 249, 0.10);
-        background: rgba(252, 249, 249, 0.10);
+        padding: 14px 28px;
+        text-transform: uppercase;
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+    .address-list-link:hover,
+    .address-list-link:focus {
+        border: 1px solid var(--yellow);
+    }
+
+    .header-socials {
+        margin-left: 20px;
+    }
+   
     .header-social-icon {
         width: 28px;
         height: 28px;
@@ -140,5 +159,9 @@
         width: 36px;
         height: 24px;
 
+    }
+
+    .header-content {
+        padding-bottom: 25px;
     }
 }
