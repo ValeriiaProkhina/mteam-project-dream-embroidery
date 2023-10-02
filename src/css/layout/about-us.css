@@ -1,20 +1,27 @@
 /*=========== mobile 320px + ============ */
+.description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 .description {
   position: relative;
 }
 .description::after {
   content: '';
   position: absolute;
+  z-index: 1;
   right: 0;
   bottom: 0;
-  width: 459px;
-  height: 408px;
-  background-image: url('/img/about-us/ornament-m.png');
+  width: 289px;
+  height: 484px;
+  background-image: url('/img/about-us/elements-mob.png');
   block-size: content;
   background-repeat: no-repeat;
 }
 .img-container {
-  margin-top: 50px;
+  position: relative;
+  z-index: 2;
 }
 
 .img {
@@ -22,14 +29,13 @@
 }
 
 .description-title {
-  padding-bottom: 20px;
-  color: #fcf9f9;
+  color: var(--white);
   font-size: 32px;
   font-weight: 500;
   line-height: 44px;
+  margin-bottom: 40px;
 }
 .description-text {
-  margin-top: 20px;
   color: var(--grey);
   font-size: 14px;
   width: 335px;
@@ -38,8 +44,8 @@
 /*============ tablet 768px + ==============*/
 @media screen and (min-width: 768px) {
   .description::after {
-    background-image: url('/img/about-us/ornament-t.png');
-    width: 544px;
+    background-image: url('/img/about-us/elements-tab.png');
+    width: 323px;
     height: 484px;
   }
 
@@ -51,21 +57,48 @@
     font-size: 16px;
     width: 704px;
   }
+  .text-part {
+    margin-bottom: 20px;
+  }
 }
 
 /*=========== desctop 1280px ================*/
 @media screen and (min-width: 1280px) {
-  .description {
-    display: flex;
+  .description-container {
     flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
   }
   .description::after {
-    background-image: url('/img/about-us/ornament-d.png');
-    width: 544px;
+    background-image: url('/img/about-us/elements-desk.png');
+    width: 385px;
     height: 484px;
   }
   .description-text {
     width: 436px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-ratio: 2) and (max-width: 767px) {
+  .description::after {
+    background-image: url('../../img/about-us/elements-mob@2x.png');
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-ratio: 2) and (min-width: 768px) {
+  .description::after {
+    background-image: url('/img/about-us/elements-tab@2x.png');
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px),
+  screen and (min-device-ratio: 2) and (min-width: 1280px) {
+  .description::after {
+    background-image: url('../../img/about-us/elements-desk@2x.png');
   }
 }
