@@ -105,7 +105,7 @@
   .image-girl-background {
     background-image: url(../../img/your_order/image-girl-green-tablet@2x.jpg);
   }
-  .section-your-order {
+  .section-your-order::after {
     background-image: url(../../img/your_order/elements-tablet@2x.png);
   }
 }
@@ -116,15 +116,22 @@
     height: 776px;
     margin-bottom: 100px;
   }
+
   .section-your-order {
+    position: relative;
+    padding-bottom: 129px;
+  }
+  .section-your-order::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 50px;
+    width: 545px;
+    height: 484px;
     background-image: url(../../img/your_order/elements-tablet.png);
     background-repeat: no-repeat;
-    background-position: 0% 97%;
-    padding-bottom: 129px;
-    /* background-position: 0% 100%;
-    margin-bottom: 50px; */
+    background-size: contain;
   }
-
   .button-send {
     margin-bottom: 100px;
   }
@@ -148,13 +155,14 @@
     height: 521px;
   }
 }
+
 @media screen and (min-resolution: 192dpi) and (min-width: 1280px),
   screen and (min-resolution: 2dppx) and (min-width: 1280px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
   .image-girl-background {
     background-image: url(../../img/your_order/image-girl-green@2x.jpg);
   }
-  .section-your-order {
+  .section-your-order::after {
     background-image: url(../../img/your_order//elements@2x.png);
   }
 }
@@ -180,10 +188,19 @@
   .button-send {
     margin-bottom: 0;
   }
+
   .section-your-order {
+    position: relative;
+    padding-bottom: 75px;
+  }
+  .section-your-order::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 75px;
+    width: 545px;
+    height: 484px;
     background-image: url('../../img/your_order/elements.png');
     background-repeat: no-repeat;
-    background-position: 0% 93%;
-    padding-bottom: 75px;
   }
 }
