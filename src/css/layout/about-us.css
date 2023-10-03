@@ -38,7 +38,7 @@
 .description-text {
   color: var(--grey);
   font-size: 14px;
-  width: 335px;
+  max-width: 335px;
 }
 
 /*============ tablet 768px + ==============*/
