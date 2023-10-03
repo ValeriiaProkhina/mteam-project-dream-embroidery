@@ -1,5 +1,5 @@
 .title-your-order {
-  color: var(--white, #fcf9f9);
+  color: var(--white);
   font-size: 32px;
 
   font-weight: 500;
@@ -13,7 +13,7 @@
 
 .input,
 .comment {
-  max-width: 335px;
+  width: 100%;
   padding: 14px 16px;
   border: 1px solid rgba(252, 249, 249, 0.1);
 
@@ -29,13 +29,24 @@
 .input {
   height: 40px;
   border-radius: 15px;
+  /* border: 1px solid rgba(252, 249, 249, 0.6); */
 }
-.input:focus,
-.input:hover,
-.comment:focus,
-.comment:hover {
+
+.comment:hover,
+.comment:focus {
+  border: 1px solid var(--yellow);
+}
+.comment:focus-within {
   border: 1px solid rgba(252, 249, 249, 0.6);
 }
+.input:hover,
+.input:focus {
+  border: 1px solid var(--yellow);
+}
+.input:focus-within {
+  border: 1px solid rgba(252, 249, 249, 0.6);
+}
+
 .comment {
   height: 196px;
   border-radius: 8px;
@@ -48,7 +59,7 @@
   align-items: center;
   padding: 14px 36px;
   background-color: transparent;
-  color: var(--white, #fcf9f9);
+  color: var(--white);
   font-size: 14px;
 
   font-weight: 600;
