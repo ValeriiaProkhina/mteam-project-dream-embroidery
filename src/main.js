@@ -4,7 +4,7 @@ $(document).ready(function () {
    
     })
      $('.mobile-menu-clear-button').click(function (event) {
-         $('.mobile-menu-clear-button, .mobile-menu').toggleClass('is-open')
+         $('.mobile-menu-clear-button, .mobile-menu').removeClass('is-open')
    
     })
 }
