@@ -91,7 +91,7 @@
   }
   .footer-item {
     width: auto;
-    margin-right: 25px;
+    /* margin-right: 25px; */
   }
   .footer_motto {
     max-width: 521px;

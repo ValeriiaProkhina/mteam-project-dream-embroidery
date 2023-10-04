@@ -41,6 +41,10 @@
   max-width: 335px;
 }
 
+.text-part {
+  margin-bottom: 20px;
+}
+
 /*============ tablet 768px + ==============*/
 @media screen and (min-width: 768px) {
   .description::after {
@@ -55,10 +59,7 @@
   }
   .description-text {
     font-size: 16px;
-    width: 704px;
-  }
-  .text-part {
-    margin-bottom: 20px;
+    max-width: 704px;
   }
 }
 
@@ -67,15 +68,20 @@
   .description-container {
     flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .description::after {
     background-image: url('/img/about-us/elements-desk.png');
     width: 385px;
     height: 484px;
   }
+
   .description-text {
-    width: 436px;
+    max-width: 436px;
+  }
+
+  .text-container {
+    max-width: 100%;
   }
 }
 
