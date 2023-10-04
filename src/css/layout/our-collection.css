@@ -1,5 +1,3 @@
-/* @media screen and (max-width: 767px) { */
-
 .main-title {
   color: var(--white);
   font-size: 44px;
@@ -10,16 +8,10 @@
   margin-bottom: 40px;
 }
 .our-collection-list {
-  /* padding-bottom: 0px; */
-  /* margin-bottom: 32px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-}
-
-.our-collection-item {
-  max-width: 347px;
 }
 
 .img-collection {
@@ -31,7 +23,6 @@
 }
 
 .container-name-collection {
-  /* padding: 18px 0; */
   border: none;
 }
 .name-title {
@@ -42,8 +33,8 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-bottom: 8px;
-  width: 335px;
 }
+
 .name-text {
   color: rgba(252, 249, 249, 0.4);
   font-size: 14px;
@@ -73,39 +64,48 @@
   z-index: 2;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 375px) {
   .our-collection-item {
-    width: calc((100% - 20px) / 2);
+    max-width: 335px;
+
+    .name-title {
+      max-width: 335px;
+    }
   }
 
-  .img-collection {
-    border-radius: 4px;
-  }
+  @media screen and (min-width: 768px) {
+    .our-collection-item {
+      width: calc((100% - 20px) / 2);
+    }
 
-  .name-title {
-    color: var(--white);
-    font-size: 18px;
-    line-height: 18px;
-    width: 342px;
-    margin-bottom: 8px;
-  }
-  .name-text {
-    color: rgba(252, 249, 249, 0.4);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0.05em;
-  }
+    .img-collection {
+      border-radius: 4px;
+    }
 
-  .our-collection::after {
-    top: 221px;
-    width: 114px;
-    height: 300px;
-    background-image: url('/img/our-collection/elem-tabl.png');
+    .name-title {
+      color: var(--white);
+      font-size: 18px;
+      line-height: 18px;
+      width: 342px;
+      margin-bottom: 8px;
+    }
+    .name-text {
+      color: rgba(252, 249, 249, 0.4);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0.05em;
+    }
+
+    .our-collection::after {
+      top: 221px;
+      width: 114px;
+      height: 300px;
+      background-image: url('/img/our-collection/elem-tabl.png');
+    }
   }
-}
-@media screen and (min-width: 1280px) {
-  /* .our-collection-background {
+  @media screen and (min-width: 1280px) {
+    /* .our-collection-background {
     background-image: url(/src/img/our-collection/our-collection-img.png);
     background-repeat: no-repeat;
     display: flex;
@@ -115,72 +115,73 @@
     align-items: center;
   } */
 
-  .main-title {
-    color: #fcf9f9;
-    font-size: 44px;
-    font-weight: 500;
-    line-height: 64px;
-    letter-spacing: 0.02em;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  .our-collection-list {
-    column-gap: 20px;
-    row-gap: 40px;
-  }
-  .our-collection-item {
-    width: calc((100% - 80px) / 3);
-  }
-  .img-collection {
-    border-radius: 4px;
-  }
-  .container-name-collection {
-    padding: 32px 0;
-    border: none;
-  }
-  .name-title {
-    color: var(--white, #fcf9f9);
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 18px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    margin-bottom: 8px;
-  }
-  .name-text {
-    color: rgba(252, 249, 249, 0.4);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0.05em;
+    .main-title {
+      color: #fcf9f9;
+      font-size: 44px;
+      font-weight: 500;
+      line-height: 64px;
+      letter-spacing: 0.02em;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .our-collection-list {
+      column-gap: 20px;
+      row-gap: 40px;
+    }
+    .our-collection-item {
+      width: calc((100% - 80px) / 3);
+    }
+    .img-collection {
+      border-radius: 4px;
+    }
+    .container-name-collection {
+      padding: 32px 0;
+      border: none;
+    }
+    .name-title {
+      color: var(--white, #fcf9f9);
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 18px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .name-text {
+      color: rgba(252, 249, 249, 0.4);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0.05em;
+    }
+
+    .our-collection::after {
+      top: 221px;
+      width: 169px;
+      height: 300px;
+      background-image: url('/img/our-collection/elem-desk.png');
+    }
   }
 
-  .our-collection::after {
-    top: 221px;
-    width: 169px;
-    height: 300px;
-    background-image: url('/img/our-collection/elem-desk.png');
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .footer_background_img {
+      background-image: url('/img/our-collection/elem-mob@2x.png');
+    }
   }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .footer_background_img {
-    background-image: url('/img/our-collection/elem-mob@2x.png');
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .footer_background_img {
+      background-image: url('/img/our-collection/elem-tabl@2x.png');
+    }
   }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .footer_background_img {
-    background-image: url('/img/our-collection/elem-tabl@2x.png');
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
-  screen and (min-resolution: 192dpi) and (min-width: 1280px),
-  screen and (min-resolution: 2dppx) and (min-width: 1280px) {
-  .footer_background_img {
-    background-image: url('/img/our-collection/elem-desk@2x.png');
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    screen and (min-resolution: 192dpi) and (min-width: 1280px),
+    screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+    .footer_background_img {
+      background-image: url('/img/our-collection/elem-desk@2x.png');
+    }
   }
 }
