@@ -59,7 +59,7 @@
   content: '';
   position: absolute;
   left: 0;
-  top: 338px;
+  top: 298px;
   width: 72px;
   height: 177px;
   background-image: url('/img/our-collection/elem-mob.png');
@@ -98,7 +98,7 @@
   }
 
   .our-collection::after {
-    top: 271px;
+    top: 221px;
     width: 114px;
     height: 300px;
     background-image: url('/img/our-collection/elem-tabl.png');
@@ -156,7 +156,7 @@
   }
 
   .our-collection::after {
-    top: 280px;
+    top: 221px;
     width: 169px;
     height: 300px;
     background-image: url('/img/our-collection/elem-desk.png');
