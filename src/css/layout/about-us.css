@@ -16,7 +16,7 @@
   width: 289px;
   height: 484px;
   background-image: url('/img/about-us/elements-mob.png');
-  block-size: content;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .img-container {
