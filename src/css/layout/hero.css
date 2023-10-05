@@ -10,6 +10,10 @@
   }
 }
 
+.hero-title-button {
+  margin-bottom: 40px;
+}
+
 .hero-title {
   max-width: 335px;
   color: var(--white);
@@ -26,27 +30,24 @@
 }
 
 .hero-button {
-    display: inline-flex;
+    display: flex;
     color: var(--white);
     font-size: 14px;
     font-weight: 600;
     line-height: normal;
     letter-spacing: -0.04em;
     text-transform: uppercase;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     gap: 10px;
     background-color: transparent;
     text-align: center;
-    align-items: center;
-    justify-content: center;
+    max-width: 150px;
     height: 49px;
     padding: 14px 36px;
     border-radius: 15px;
     border: 1px solid rgba(252, 249, 249, 0.1);
-    margin-right: 130px;
-    margin-left: 90px;
-    margin-bottom: 40px;
+    margin: 0 auto;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -112,13 +113,13 @@
   }
 
   .hero-button {
-    display: flex;
     font-size: 16px;
     padding: 14px 39px;
-    width: 168px;
+    max-width: 168px;
     margin-right: 240px;
     margin-left: 141px;
   }
+
 
   .hero-dekor-img {
     position: absolute;
