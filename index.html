@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vyshyvanka Vibes</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/team-project-dream-embroidery/assets/apple-touch-icon-dcb12cb3.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,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"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAC01BMVEX6+OP9+t345pr79dv9///7++j98MT9/fP9+db69s37/vz+/fH27KL48bn9++/577P8+t336Jb67bT+/PP7+Nn9+Nv255X687z365L69MP7+uL9++7999b154778sP9+uL04on45qj8/fD8/vj267T156D488b577f17bn68bn45oz79uD8/v769tP46Ib79cv155/9++n7/fz8//r7/Or477P89+H+/O79/Or58r389s37/vr+/fr69cH48Lv9/Pb7/vf58Mr789f8/vn+/vf699Xy8Ln17sD8/e/9/vz9/O/77r36+u79/ff+/PX8/fT67rr25I39/Ov6+Nj16Kj799j277z+/fP58rL25pr8++/9/fr9/v39/vP47q/47r759Mvz66H89t7+/vv8/fP37bn47r348Mf69MH466H69978/Pb798/69cv35Zf799L17K769tL+/fj39dD8+uf8+/Dz6qn59dH57bH56qD899n566n16q3+/Ob78rj89tD58L/8/On9/fT17Kj699j69Mj69cz68rv+9NX69c3144b8+uv37aj06p/6+Nf38L/36bP9/O78/Ov9/vb69Mvz6qX59Lz55ZT999369NT9/PP588/79c7255H7+d716rv06rb+/fX799f36aD6+d/677X79tv8++39/v78/PL9/vj37LH36qT7/PH26rT48b/17KP7//vz5pz7//X6/vL36Z38+uz7+uP7++77++P366z69s/69tX58MH89dH+/ff6+uD7977487325pD656X9+/L+/Pf06Kjz56L79ML58bX1763677z15JP79+L9//n99sv16ZP899D++uj26Zn46p/9/O37+OD8+tr06Yv888H16Jf57rn79+H8++z05IP78MH8+d79/e38+N725JP59M/9//r8+uP18bb9/fD79tX58cvy6KX36679+ur28bD///9yzzAxAAAAAWJLR0TwNbjvVAAAAAd0SU1FB+cKBQw1IV25QoUAAAEbSURBVBjTARAB7/4AAAECAwQFBgcICQoLDA0ODwAQERITFBUWFxgZGhscHR4fACAhIiMkJSYnKCkqKywtLi8AMDEyMzQ1Njc4OTojOzw9PgA/QEFCQ0RFRkdISUpLTE1OADxPUFFSU1RVR1ZXWFlaW1wAXV4PX2BhYmNkZWZnaGlqawBsbW5vcHFyc3R1dnd4eXp7AHx9fn+AgYKDhEmFhoeIiYoAi4yNjo+QkZKTlJUUlpeYmQCam5ydnp+goaKjpJalpqeoAKmqq6xNra6vsEWxprKLs7QAtba3uLm6u7wUvb6/wBPBwgDDxMXGx8jJysvMzc7P0NHSANPU1dbX2Nna29zd3m/f4OEA4uPk5ebn6Onq60m07O3u70XAdQdOoOhTAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIzLTEwLTA1VDEyOjUzOjMzKzAwOjAw8o5z4AAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMy0xMC0wNVQxMjo1MzozMyswMDowMIPTy1wAAABXelRYdFJhdyBwcm9maWxlIHR5cGUgaXB0YwAAeJzj8gwIcVYoKMpPy8xJ5VIAAyMLLmMLEyMTS5MUAxMgRIA0w2QDI7NUIMvY1MjEzMQcxAfLgEigSi4A6hcRdPJCNZUAAAAASUVORK5CYII="
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#ff0000" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
-  
-  <script type="module" crossorigin src="/team-project-dream-embroidery/assets/index-9def212d.js"></script>
-  <link rel="stylesheet" href="/team-project-dream-embroidery/assets/index-81bc6778.css">
-</head>
+    <title>Vyshyvanka Vibes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-  <header class="header-content">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    
+    <script type="module" crossorigin src="/team-project-dream-embroidery/assets/index-9def212d.js"></script>
+    <link rel="stylesheet" href="/team-project-dream-embroidery/assets/index-81bc6778.css">
+  </head>
+
+  <body>
+    <header class="header-content">
   <div class="container header-container">
     <nav class="header-nav">
       <img
@@ -84,8 +110,8 @@
   </div>
 </header>
 
-  <main>
-    <section class="hero-section section">
+    <main>
+      <section class="hero-section section">
   <div class="container hero-container">
     <div class="hero-star">
       <svg class="hero-star-icon" width="52" height="51" aria-label="star icon">
@@ -133,7 +159,7 @@
   </div>
 </section>
 
-    <section class="description section" id="about-us">
+      <section class="description section" id="about-us">
   <div class="description-container container">
     <div class="text-container">
       <h2 class="description-title">About Us</h2>
@@ -167,7 +193,7 @@
   <div class="img-container"></div>
 </section>
 
-    <section class="our-collection section" id="our-collection">
+      <section class="our-collection section" id="our-collection">
   <div class="container-collection container">
     <h2 class="main-title">Our collection</h2>
     <ul class="our-collection-list">
@@ -266,7 +292,7 @@
   </div>
 </section>
 
-    <section class="section-your-order section">
+      <section class="section-your-order section">
   <div class="image-girl-background"></div>
   <div class="container container-your-order">
     <div class="container-order-form">
@@ -324,7 +350,7 @@
   </div>
 </section>
 
-    <section class="testimonials-section section" id="testimonials">
+      <section class="testimonials-section section" id="testimonials">
   <div class="container">
     <h2 class="testimonials-title">Testimonials</h2>
 
@@ -386,8 +412,8 @@
   </div>
 </section>
 
-  </main>
-  <footer class="footer_section section">
+    </main>
+    <footer class="footer_section section">
   <div class="footer-container container">
     <ul class="footer_ul">
       <li class="footer-item">
@@ -411,7 +437,7 @@
   <div class="footer_background_img"></div>
 </footer>
 
-  <div class="mobile-menu">
+    <div class="mobile-menu">
   <button class="mobile-menu-clear-button" type="button">
     <svg width="100%" height="100%" aria-label="clear-button">
       <use href="/team-project-dream-embroidery/assets/icons-b0b3625f.svg#icon-close-mobmenu"></use>
@@ -429,10 +455,9 @@
     </ul>
   </nav>
 </div>
-  <!-- підключаєм jquery  -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-  <!-- script -->
-  
-</body>
-
+    <!-- підключаєм jquery  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <!-- script -->
+    
+  </body>
 </html>
