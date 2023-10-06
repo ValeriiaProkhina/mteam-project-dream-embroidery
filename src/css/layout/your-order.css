@@ -25,6 +25,7 @@
 
   line-height: normal;
   letter-spacing: -0.02em;
+  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input {
   height: 40px;
@@ -69,6 +70,7 @@
   outline: transparent;
   border-radius: 15px;
   border: 1px solid rgba(252, 249, 249, 0.1);
+  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .send-svg {
   fill: #ecd979;
