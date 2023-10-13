@@ -1,3 +1,28 @@
+.our-collection-item:hover,
+.our-collection-item:focus {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px hsla(59, 78%, 68%, 0.984);
+  border-radius: 4px;
+}
+.name-title {
+  transition: color 500ms ease-in-out;
+}
+
+.our-collection-item:hover .name-title,
+.our-collection-item:focus .name-title {
+  text-align: center;
+  color: var(--yellow);
+}
+.name-text {
+  transition: color 500ms ease-in-out;
+}
+
+.our-collection-item:hover .name-title + .name-text,
+.our-collection-item:focus .name-title + .name-text {
+  text-align: center;
+  color: rgba(252, 249, 249, 0.73);
+}
+
 .main-title {
   color: var(--white);
   font-size: 44px;
@@ -6,7 +31,16 @@
   letter-spacing: 0.02em;
   text-align: center;
   margin-bottom: 40px;
+
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 350ms ease-in-out;
 }
+.main-title._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
 .our-collection-list {
   display: flex;
   flex-wrap: wrap;
@@ -102,16 +136,30 @@
   }
 }
 @media screen and (min-width: 1280px) {
-  /* .our-collection-background {
-    background-image: url(/src/img/our-collection/our-collection-img.png);
-    background-repeat: no-repeat;
-    display: flex;
-    width: 338px;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
-  } */
+  .our-collection-item:hover,
+  .our-collection-item:focus {
+    /* box-shadow: 0 5px 20px hsla(59, 78%, 68%, 0.984); */
+    transform: scale(1.1);
+    /* border-radius: 4px; */
+  }
+  /* .name-title {
+    transition: color 500ms ease-in-out;
+  }
 
+  .our-collection-item:hover .name-title,
+  .our-collection-item:focus .name-title {
+    text-align: center;
+    color: var(--yellow);
+  }
+  .name-text {
+    transition: color 500ms ease-in-out;
+  }
+
+  .our-collection-item:hover .name-title + .name-text,
+  .our-collection-item:focus .name-title + .name-text {
+    text-align: center;
+    color: rgba(252, 249, 249, 0.73);
+  } */
   .main-title {
     color: #fcf9f9;
     font-size: 44px;
@@ -127,6 +175,7 @@
   }
   .our-collection-item {
     width: calc((100% - 80px) / 3);
+    transition: box-shadow 500ms ease-in-out, transform 500ms ease-in-out;
   }
   .img-collection {
     border-radius: 4px;

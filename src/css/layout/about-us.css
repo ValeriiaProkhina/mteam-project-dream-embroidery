@@ -1,4 +1,25 @@
 /*=========== mobile 320px + ============ */
+.description-title {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 350ms ease-in-out;
+}
+.description-title._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.description-text {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+.description-text._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 500ms ease-in-out 300ms;
+}
+
 .description-container {
   display: flex;
   flex-direction: column;

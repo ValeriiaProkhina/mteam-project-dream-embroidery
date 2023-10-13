@@ -1,4 +1,13 @@
 .title-your-order {
+  transform: translate(0px, 100%);
+  opacity: 0;
+  transition: transform 250ms ease;
+}
+.title-your-order._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+.title-your-order {
   color: var(--white);
   font-size: 32px;
 
