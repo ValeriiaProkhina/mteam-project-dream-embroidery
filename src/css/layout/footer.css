@@ -32,6 +32,14 @@
   line-height: 1.2;
   letter-spacing: -0.03em;
   margin-bottom: 80px;
+
+  transform: translate(0px, 100%);
+  opacity: 0;
+  transition: transform 250ms ease;
+}
+.footer_motto._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 .footer_Ukrainian {
   color: #ecd979;

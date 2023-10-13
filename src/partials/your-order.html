@@ -1,23 +1,44 @@
 <section class="section-your-order section">
-  <div class="image-girl-background"></div>
+  <div class="image-girl-background _anim-items _anim-no-hide"></div>
   <div class="container container-your-order">
     <div class="container-order-form">
-      <h2 class="title-your-order" id="your-order">
+      <h2 class="title-your-order _anim-items _anim-no-hide" id="your-order">
         <span class="title-yellow">Your order</span> is our priority:
         Personalized approach and quality of service
       </h2>
       <form class="form-order">
         <div class="input-box">
-          <input class="input" id="user-name" name="user-name" type="text" pattern="^[A-Za-zА-Яа-яЁё]{2,}$"
-            placeholder=" Enter your full name" />
+          <label for="user-name"></label>
+          <input
+            class="input"
+            id="user-name"
+            name="user-name"
+            type="text"
+            pattern="[A-Za-zА-Яа=яіїІЇєЄґҐ`]+"
+            required
+            title="Hanna"
+            placeholder="Enter your full name"
+          />
         </div>
         <div class="input-box">
-          <input class="input" type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            placeholder="Enter your email" />
+          <label for="email"></label>
+          <input
+            class="input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
         </div>
 
         <div class="comment-box">
-          <textarea class="comment" name="user-comment" placeholder="Comments" id="user-comment"></textarea>
+          <label for="user-comment"></label>
+          <textarea
+            class="comment"
+            name="user-comment"
+            placeholder="Comments"
+            id="user-comment"
+          ></textarea>
         </div>
         <button class="button-send" type="submit">
           Send
@@ -28,13 +49,18 @@
       </form>
     </div>
     <div class="img-girl-container">
-      <img class="image-girl" srcset="
+      <img
+        class="image-girl"
+        srcset="
           /img/your_order/Rectangle.jpg            524w,
           /img/your_order/Rectangle@2x.jpg        1048w,
           /img/your_order/Rectangle-tablet.jpg     638w,
           /img/your_order/Rectangle-tablet@2x.jpg 1276w
-        " sizes="(min-width: 1280px) 524px, (max-width: 1280px) 638px" src="/img/your_order/Rectangle.jpg"
-        alt="girl" />
+        "
+        sizes="(min-width: 1280px) 524px, (max-width: 1280px) 638px"
+        src="/img/your_order/Rectangle.jpg"
+        alt="girl"
+      />
     </div>
   </div>
 </section>

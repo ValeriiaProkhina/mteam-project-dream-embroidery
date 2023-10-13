@@ -1,3 +1,19 @@
+.header-container:hover .header-nav > .header-icon,
+.header-container:focus .header-nav > .header-icon {
+  transform: rotate(1turn);
+}
+
+.header-icon {
+  transition: transform 1000ms ease-in-out;
+}
+
+.header-item-social:hover,
+.header-item-social:focus {
+  transform: scale(1.1);
+}
+.header-item-social {
+  transition: transform 250ms ease-in-out;
+}
 .header-container {
   display: flex;
   width: 100%;
