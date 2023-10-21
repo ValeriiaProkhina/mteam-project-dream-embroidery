@@ -1,23 +1,36 @@
 /*=========== mobile 320px + ============ */
+
 .description-title {
   transform: translate(0px, 120%);
   opacity: 0;
-  transition: all 350ms ease-in-out;
 }
+
 .description-title._active {
   transform: translate(0px, 0px);
   opacity: 1;
+  transition: all 300ms ease-in-out;
 }
 
 .description-text {
   transform: translate(0px, 120%);
   opacity: 0;
-  transition: all 500ms ease-in-out;
 }
+
 .description-text._active {
   transform: translate(0px, 0px);
   opacity: 1;
-  transition: all 500ms ease-in-out 300ms;
+  transition: all 300ms ease-in-out;
+}
+
+.img-blouse-container {
+  transform: translate(0px, 120%);
+  opacity: 0;
+}
+
+.img-blouse-container._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 400ms ease-in-out;
 }
 
 .description-container {
@@ -25,9 +38,11 @@
   flex-direction: column;
   gap: 50px;
 }
+
 .description {
   position: relative;
 }
+
 .description::after {
   content: '';
   position: absolute;
@@ -40,6 +55,7 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 .img-container {
   position: relative;
   z-index: 2;
@@ -56,6 +72,7 @@
   line-height: 44px;
   margin-bottom: 40px;
 }
+
 .description-text {
   color: var(--grey);
   font-size: 14px;
@@ -82,7 +99,31 @@
     font-size: 16px;
     max-width: 704px;
   }
+
+  .description-title._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 400ms ease-in-out;
+  }
+
+  .description-text._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 600ms ease-in-out 500ms;
+  }
+
+  .img-blouse-container {
+    transform: translate(120%, 0px);
+    opacity: 0;
+  }
+
+  .img-blouse-container._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 700ms ease-in-out 600ms;
+  }
 }
+
 
 /*=========== desctop 1280px ================*/
 @media screen and (min-width: 1280px) {
@@ -91,6 +132,7 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
+
   .description::after {
     background-image: url('/img/about-us/elements-desk.png');
     width: 385px;
@@ -99,6 +141,24 @@
 
   .description-text {
     max-width: 436px;
+  }
+
+  .description-title._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 500ms ease-in-out;
+  }
+
+  .description-text._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 600ms ease-in-out;
+  }
+
+  .img-blouse-container._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 700ms ease-in-out;
   }
 
   .text-container {
